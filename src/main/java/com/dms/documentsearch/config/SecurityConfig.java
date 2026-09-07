@@ -55,6 +55,10 @@ public class SecurityConfig {
                 ).permitAll()
 
                 .requestMatchers(
+                    "/api/ai/test"
+                ).permitAll()
+
+                .requestMatchers(
                     "/api/admin/**"
                 ).hasRole("ADMIN")
 
